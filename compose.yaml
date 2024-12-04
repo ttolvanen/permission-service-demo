@@ -1,0 +1,12 @@
+﻿services:
+  permissionservice:
+    image: permissionservice
+    build:
+      context: .
+      dockerfile: PermissionService/Dockerfile
+
+  permissionapi:
+    image: permissionapi
+    build:
+      context: .
+      dockerfile: PermissionApi/Dockerfile
